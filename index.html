@@ -82,19 +82,11 @@
       color: #ccc;
       font-style: italic;
     }
-    ul {
-      list-style: none;
-      padding: 0;
-    }
-    li {
-      margin: 10px 0;
-      font-size: 16px;
-    }
   </style>
 </head>
 <body>
   <header>
-    <h1>📜 TURN Roleplay - Tabela de Valores Do Ilegal</h1>
+    <h1>📜 TURN Roleplay - Tabela de Valores</h1>
     <nav>
       <button onclick="showSection('armas')">🔫 Armas</button>
       <button onclick="showSection('lavagem')">💸 Lavagem</button>
@@ -128,44 +120,72 @@
 
   <div class="content" id="lavagem">
     <h2>💸 Lavagem de Dinheiro</h2>
-    <ul>
-      <li>✅ <strong>Taxa Fixa:</strong> 30%</li>
-      <li>✅ <strong>Acima de R$ 1.500.000:</strong> 20%</li>
-    </ul>
+    <div class="item">✅ <strong>Taxa Fixa</strong><br>
+      <div class="price">💰 <strong>30%</strong> aplicada sobre qualquer valor lavado.</div>
+    </div>
+    <div class="item">✅ <strong>Acima de R$ 1.500.000</strong><br>
+      <div class="price">💰 <strong>20%</strong> para valores acima de R$ 1.500.000.</div>
+    </div>
   </div>
 
   <div class="content" id="itens">
     <h2>📦 Itens Ilegais</h2>
-    <ul>
-      <li>💣 <strong>C4:</strong> R$ 3.000 ~ R$ 4.200</li>
-      <li>🔗 <strong>Algema:</strong> R$ 6.000 ~ R$ 7.500</li>
-      <li>🎭 <strong>Capuz:</strong> R$ 6.000 ~ R$ 7.500</li>
-      <li>📟 <strong>Pager:</strong> R$ 5.000 ~ R$ 6.500</li>
-      <li>🛠️ <strong>Gazua:</strong> R$ 10.000 ~ R$ 13.500</li>
-      <li>📶 <strong>Bloqueador de Sinal:</strong> R$ 4.000 ~ R$ 5.500</li>
-    </ul>
+    <div class="item">💣 <strong>C4</strong><br>
+      <div class="price">💰 Valor Mínimo: R$ 3.000 | Valor Máximo: R$ 4.200</div>
+    </div>
+    <div class="item">🔗 <strong>Algema</strong><br>
+      <div class="price">💰 Valor Mínimo: R$ 6.000 | Valor Máximo: R$ 7.500</div>
+    </div>
+    <div class="item">🎭 <strong>Capuz</strong><br>
+      <div class="price">💰 Valor Mínimo: R$ 6.000 | Valor Máximo: R$ 7.500</div>
+    </div>
+    <div class="item">📟 <strong>Pager</strong><br>
+      <div class="price">💰 Valor Mínimo: R$ 5.000 | Valor Máximo: R$ 6.500</div>
+    </div>
+    <div class="item">🛠️ <strong>Gazua</strong><br>
+      <div class="price">💰 Valor Mínimo: R$ 10.000 | Valor Máximo: R$ 13.500</div>
+    </div>
+    <div class="item">📶 <strong>Bloqueador de Sinal</strong><br>
+      <div class="price">💰 Valor Mínimo: R$ 4.000 | Valor Máximo: R$ 5.500</div>
+    </div>
   </div>
 
   <div class="content" id="drogas">
     <h2>💊 Drogas</h2>
-    <ul>
-      <li>🚬 <strong>Cigarro Canabis:</strong> R$ 200 ~ R$ 400</li>
-      <li>💎 <strong>Crack:</strong> R$ 200 ~ R$ 400</li>
-      <li>🧪 <strong>Metanfetamina:</strong> R$ 200 ~ R$ 400</li>
-      <li>❄️ <strong>Cocaína:</strong> R$ 200 ~ R$ 400</li>
-      <li>💉 <strong>Heroína:</strong> R$ 200 ~ R$ 400</li>
-      <li>🍬 <strong>Ecstasy:</strong> R$ 200 ~ R$ 400</li>
-    </ul>
+    <div class="item">🚬 <strong>Cigarro Canabis</strong><br>
+      <div class="price">💰 Valor Mínimo: R$ 200 | Valor Máximo: R$ 400</div>
+    </div>
+    <div class="item">💎 <strong>Crack</strong><br>
+      <div class="price">💰 Valor Mínimo: R$ 200 | Valor Máximo: R$ 400</div>
+    </div>
+    <div class="item">🧪 <strong>Metanfetamina</strong><br>
+      <div class="price">💰 Valor Mínimo: R$ 200 | Valor Máximo: R$ 400</div>
+    </div>
+    <div class="item">❄️ <strong>Cocaína</strong><br>
+      <div class="price">💰 Valor Mínimo: R$ 200 | Valor Máximo: R$ 400</div>
+    </div>
+    <div class="item">💉 <strong>Heroína</strong><br>
+      <div class="price">💰 Valor Mínimo: R$ 200 | Valor Máximo: R$ 400</div>
+    </div>
+    <div class="item">🍬 <strong>Ecstasy</strong><br>
+      <div class="price">💰 Valor Mínimo: R$ 200 | Valor Máximo: R$ 400</div>
+    </div>
   </div>
 
   <div class="content" id="municao">
     <h2>🔫 Munição</h2>
-    <ul>
-      <li>🔫 <strong>Rifle:</strong> R$ 400 ~ R$ 600</li>
-      <li>🔫 <strong>Pistola:</strong> R$ 80 ~ R$ 150</li>
-      <li>🔫 <strong>Escopeta:</strong> R$ 1.800 ~ R$ 2.200</li>
-      <li>🔫 <strong>Submetralhadora (SMG):</strong> R$ 260 ~ R$ 400</li>
-    </ul>
+    <div class="item">🔫 <strong>Rifle</strong><br>
+      <div class="price">💰 Valor Mínimo: R$ 400 | Valor Máximo: R$ 600</div>
+    </div>
+    <div class="item">🔫 <strong>Pistola</strong><br>
+      <div class="price">💰 Valor Mínimo: R$ 80 | Valor Máximo: R$ 150</div>
+    </div>
+    <div class="item">🔫 <strong>Escopeta</strong><br>
+      <div class="price">💰 Valor Mínimo: R$ 1.800 | Valor Máximo: R$ 2.200</div>
+    </div>
+    <div class="item">🔫 <strong>Submetralhadora (SMG)</strong><br>
+      <div class="price">💰 Valor Mínimo: R$ 260 | Valor Máximo: R$ 400</div>
+    </div>
   </div>
 
   <script>
